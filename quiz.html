@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Jazz Quiz</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col-6">
-            <a href="#">View Highscores</a>
+                <a href="#">View Highscores</a>
             </div>
             <div class="col-6">
-            <p id="timer">Time: 75</p>
+                <p id="timer"></p>
             </div>
         </div>
+        <!-- start quiz screen -->
         <div class="row" id="startWrapper">
             <div class="col-md-6 mx-auto">
-                <h1>Guitar Quiz</h1>
+                <h1>Jazz Quiz!</h1>
                 <p>Click "Get Started" to Begin</p>
-                <button class="btn btn-primary">Get Started</button>
+                <div id="button-div" class="btn-group-vertical">
+                    <button id="startBtn" class="btn btn-primary">Get Started</button>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h1 id="quiz-question"></h1>
+                <div id="btnWrapper" class="btn-group-vertical">
+                </div>
+                <p id="correct-incorrect"></p>
+            </div>
+        </div>
+
+        <div class="input-group mb-3 d-none">
+            <input id="initials" type="text" class="form-control" placeholder="Enter"
+            aria-label="initials" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button id="submit" type="submit">SUBMIT</button>
+            </div>
+
+
     </div>
 
-<script>
-
-</script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
